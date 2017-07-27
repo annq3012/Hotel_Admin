@@ -37,6 +37,9 @@ Route::group(['prefix'=>'admin'], function() {
 		Route::get('/room',function () {
 			return view('hotel_admin.room.indexRoom');
 		});
+		Route::get('/service',function () {
+			return view('hotel_admin.service.indexService');
+		});
 	});
 
 

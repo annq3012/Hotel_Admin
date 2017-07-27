@@ -1,6 +1,6 @@
-@include ('hotel_admin.inc.header')
-  <!-- Left side column. contains the logo and sidebar -->
-@include ('hotel_admin.inc.left-bar')
+@extends('templates.hotel_admin.master')
+
+@section('content')
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
@@ -24,6 +24,11 @@
             <div class="box-header">
               <h3 class="box-title">Danh sách Khách sạn</h3>
             </div>
+            <div class="float-left">
+              <a href="">
+              <span>Thêm Khách sạn <img src="../../hotel_admin/dist/img/plus-small.gif" alt="ThemTin"></span>
+              </a>
+            </div>
             <!-- /.box-header -->
             <div class="box-body">
               <table id="example1" class="table table-bordered table-striped">
@@ -36,6 +41,7 @@
                   <th>Introduce</th>
                   <th>Place</th>
                   <th>Function</th>
+                  <th>Information</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -50,6 +56,7 @@
                     <a href="">Sửa <img src="../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
                     <a href="">Xóa <img src="../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
                   </td>
+                  <td><a href="">Chi tiết <img src="../hotel_admin/dist/img/notification-information.gif" alt="edit" /></a></td>
                 </tr>
                 <tr>
                  <td>1</td>
@@ -62,6 +69,7 @@
                     <a href="">Sửa <img src="../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
                     <a href="">Xóa <img src="../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
                   </td>
+                  <td><a href="">Chi tiết <img src="../hotel_admin/dist/img/notification-information.gif" alt="edit" /></a></td>
                 </tr>
                 <tr>
                  <td>1</td>
@@ -74,6 +82,7 @@
                     <a href="">Sửa <img src="../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
                     <a href="">Xóa <img src="../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
                   </td>
+                  <td><a href="">Chi tiết <img src="../hotel_admin/dist/img/notification-information.gif" alt="edit" /></a></td>
                 </tr>
                 <tr>
                  <td>1</td>
@@ -86,6 +95,7 @@
                     <a href="">Sửa <img src="../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
                     <a href="">Xóa <img src="../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
                   </td>
+                  <td><a href="">Chi tiết <img src="../hotel_admin/dist/img/notification-information.gif" alt="edit" /></a></td>
                 </tr>
                 <tr>
                   <td>1</td>
@@ -98,6 +108,7 @@
                     <a href="">Sửa <img src="../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
                     <a href="">Xóa <img src="../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
                   </td>
+                  <td><a href="">Chi tiết <img src="../hotel_admin/dist/img/notification-information.gif" alt="edit" /></a></td>
                 </tr>
                 <tr>
                   <td>1</td>
@@ -110,6 +121,7 @@
                     <a href="">Sửa <img src="../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
                     <a href="">Xóa <img src="../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
                   </td>
+                  <td><a href="">Chi tiết <img src="../hotel_admin/dist/img/notification-information.gif" alt="edit" /></a></td>
                 </tr>
                 <tr>
                   <td>1</td>
@@ -122,6 +134,7 @@
                     <a href="">Sửa <img src="../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
                     <a href="">Xóa <img src="../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
                   </td>
+                  <td><a href="">Chi tiết <img src="../hotel_admin/dist/img/notification-information.gif" alt="edit" /></a></td>
                 </tr>
                 <tr>
                  <td>1</td>
@@ -134,6 +147,7 @@
                     <a href="">Sửa <img src="../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
                     <a href="">Xóa <img src="../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
                   </td>
+                  <td><a href="">Chi tiết <img src="../hotel_admin/dist/img/notification-information.gif" alt="edit" /></a></td>
                 </tr>
                 <tr>
                   <td>1</td>
@@ -146,6 +160,7 @@
                     <a href="">Sửa <img src="../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
                     <a href="">Xóa <img src="../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
                   </td>
+                  <td><a href="">Chi tiết <img src="../hotel_admin/dist/img/notification-information.gif" alt="edit" /></a></td>
                 </tr>
                 <tr>
                   <td>1</td>
@@ -158,6 +173,7 @@
                     <a href="">Sửa <img src="../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
                     <a href="">Xóa <img src="../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
                   </td>
+                  <td><a href="">Chi tiết <img src="../hotel_admin/dist/img/notification-information.gif" alt="edit" /></a></td>
                 </tr>
                 <tr>
                   <td>1</td>
@@ -170,6 +186,7 @@
                     <a href="">Sửa <img src="../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
                     <a href="">Xóa <img src="../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
                   </td>
+                  <td><a href="">Chi tiết <img src="../hotel_admin/dist/img/notification-information.gif" alt="edit" /></a></td>
                 </tr>
                 <tr>
                   <td>1</td>
@@ -182,6 +199,7 @@
                     <a href="">Sửa <img src="../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
                     <a href="">Xóa <img src="../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
                   </td>
+                  <td><a href="">Chi tiết <img src="../hotel_admin/dist/img/notification-information.gif" alt="edit" /></a></td>
                 </tr>
                 <tr>
                  <td>1</td>
@@ -194,6 +212,7 @@
                     <a href="">Sửa <img src="../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
                     <a href="">Xóa <img src="../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
                   </td>
+                  <td><a href="">Chi tiết <img src="../hotel_admin/dist/img/notification-information.gif" alt="edit" /></a></td>
                 </tr>
                 <tr>
                  <td>1</td>
@@ -206,6 +225,7 @@
                     <a href="">Sửa <img src="../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
                     <a href="">Xóa <img src="../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
                   </td>
+                  <td><a href="">Chi tiết <img src="../hotel_admin/dist/img/notification-information.gif" alt="edit" /></a></td>
                 </tr>
                 <tr>
                   <td>1</td>
@@ -218,6 +238,7 @@
                     <a href="">Sửa <img src="../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
                     <a href="">Xóa <img src="../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
                   </td>
+                  <td><a href="">Chi tiết <img src="../hotel_admin/dist/img/notification-information.gif" alt="edit" /></a></td>
                 </tr>
                 <tr>
                  <td>1</td>
@@ -230,6 +251,7 @@
                     <a href="">Sửa <img src="../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
                     <a href="">Xóa <img src="../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
                   </td>
+                  <td><a href="">Chi tiết <img src="../hotel_admin/dist/img/notification-information.gif" alt="edit" /></a></td>
                 </tr>
                 <tr>
                 <td>1</td>
@@ -242,6 +264,7 @@
                     <a href="">Sửa <img src="../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
                     <a href="">Xóa <img src="../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
                   </td>
+                  <td><a href="">Chi tiết <img src="../hotel_admin/dist/img/notification-information.gif" alt="edit" /></a></td>
                 </tr>
                 <tr>
                  <td>1</td>
@@ -254,6 +277,7 @@
                     <a href="">Sửa <img src="../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
                     <a href="">Xóa <img src="../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
                   </td>
+                  <td><a href="">Chi tiết <img src="../hotel_admin/dist/img/notification-information.gif" alt="edit" /></a></td>
                 </tr>
                 <tr>
                  <td>1</td>
@@ -266,6 +290,7 @@
                     <a href="">Sửa <img src="../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
                     <a href="">Xóa <img src="../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
                   </td>
+                  <td><a href="">Chi tiết <img src="../hotel_admin/dist/img/notification-information.gif" alt="edit" /></a></td>
                 </tr>
                 <tr>
                   <<td>1</td>
@@ -278,6 +303,7 @@
                     <a href="">Sửa <img src="../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
                     <a href="">Xóa <img src="../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
                   </td>
+                  <td><a href="">Chi tiết <img src="../hotel_admin/dist/img/notification-information.gif" alt="edit" /></a></td>
                 </tr>
                 <tr>
                   <td>1</td>
@@ -290,6 +316,7 @@
                     <a href="">Sửa <img src="../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
                     <a href="">Xóa <img src="../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
                   </td>
+                  <td><a href="">Chi tiết <img src="../hotel_admin/dist/img/notification-information.gif" alt="edit" /></a></td>
                 </tr>
                 <tr>
                   <td>1</td>
@@ -302,6 +329,7 @@
                     <a href="">Sửa <img src="../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
                     <a href="">Xóa <img src="../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
                   </td>
+                  <td><a href="">Chi tiết <img src="../hotel_admin/dist/img/notification-information.gif" alt="edit" /></a></td>
                 </tr>
                 <tr>
                  <td>1</td>
@@ -314,6 +342,7 @@
                     <a href="">Sửa <img src="../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
                     <a href="">Xóa <img src="../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
                   </td>
+                  <td><a href="">Chi tiết <img src="../hotel_admin/dist/img/notification-information.gif" alt="edit" /></a></td>
                 </tr>
                 </tbody>
               </table>
@@ -329,7 +358,6 @@
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
-@include('hotel_admin.inc.footer')  
 
   <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark">
@@ -342,7 +370,7 @@
     <div class="tab-content">
       <!-- Home tab content -->
       <div class="tab-pane" id="control-sidebar-home-tab">
-@include('hotel_admin.inc.infor')
+@include('templates.hotel_admin.infor')
         <!-- /.control-sidebar-menu -->
 
       </div>
@@ -428,34 +456,4 @@
 </div>
 <!-- ./wrapper -->
 
-<!-- jQuery 3 -->
-<script src="../hotel_admin/bower_components/jquery/dist/jquery.min.js"></script>
- <!-- Bootstrap 3.3.7 -->
-<script src="../hotel_admin/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-<!-- DataTables -->
-<script src="../hotel_admin/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
-<script src="../hotel_admin/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
-<!-- SlimScroll -->
-<script src="../hotel_admin/bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
-<!-- FastClick -->
-<script src="../hotel_admin/bower_components/fastclick/lib/fastclick.js"></script>
-<!-- AdminLTE App -->
-<script src="../hotel_admin/dist/js/adminlte.min.js"></script>
-<!-- AdminLTE for demo purposes -->
-<script src="../hotel_admin/dist/js/demo.js"></script>
-<!-- page script -->
-<script>
-  $(function () {
-    $('#example1').DataTable()
-    $('#example2').DataTable({
-      'paging'      : true,
-      'lengthChange': false,
-      'searching'   : false,
-      'ordering'    : true,
-      'info'        : true,
-      'autoWidth'   : false
-    })
-  })
-</script>
-</body>
-</html>
+@endsection

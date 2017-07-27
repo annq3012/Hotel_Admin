@@ -23,6 +23,11 @@
           <div class="box">
             <div class="box-header">
               <h3 class="box-title">Danh sách tin tức</h3>
+              <div class="float-left">
+              <a href="">
+              <span>Thêm Địa điểm <img src="../../hotel_admin/dist/img/plus-small.gif" alt="ThemTin"></span>
+              </a>
+            </div>
             </div>
             <!-- /.box-header -->
             <div class="box-body">

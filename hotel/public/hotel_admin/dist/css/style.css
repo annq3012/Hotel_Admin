@@ -1,0 +1,8 @@
+.float-left a {
+  background: violet;
+  padding: 5px;
+  color: #FFF;
+  border-radius: 6px; 
+  margin-left: 6px; 
+  font-weight: bold;
+}

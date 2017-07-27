@@ -1,18 +1,17 @@
-@include ('hotel_admin.inc.header')
-  <!-- Left side column. contains the logo and sidebar -->
-@include ('hotel_admin.inc.left-bar')
+@extends('templates.hotel_admin.master')
 
+@section('content')
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Khách sạn
-        <small>Hotel</small>
+        Buồng phòng khách sạn
+        <small>Room</small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Trang chủ</a></li>
-        <li class="active">Khách sạn</li>
+        <li class="active">Buồng phòng</li>
       </ol>
     </section>
 
@@ -22,7 +21,12 @@
         <div class="col-xs-12">
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title">Danh sách Khách sạn</h3>
+              <h3 class="box-title">Danh sách Phòng</h3>
+            </div>
+            <div class="float-left">
+              <a href="">
+              <span>Thêm Phòng <img src="../../hotel_admin/dist/img/plus-small.gif" alt="ThemTin"></span>
+              </a>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
@@ -34,6 +38,9 @@
                   <th>Describe</th>
                   <th>Price</th>
                   <th>Size</th>
+                  <th>Total</th>
+                  <th>Bed</th>
+                  <th>Direction</th>
                   <th>Max_Guest</th>
                   <th>Hotel</th>
                   <th>Function</th>
@@ -41,307 +48,469 @@
                 </thead>
                 <tbody>
                 <tr>
-                 <td>1</td>
+                  <td>1</td>
                   <td>Phòng VIP 101</td>
                   <td>Cạnh biển, có thể ngắm bình minh lúc bão, nhìn thấy các hiện tượng tự nhiên như sóng thần, lốc xoáy,...</td>
                   <td>300$/ đêm</td>
                   <td> 15 m2</td>
+                  <td> 5 phòng</td>
+                  <td> 2 giường</td>
+                  <td>Hướng 1 giờ</td>
                   <td>3 người</td>
                   <td>Thousand Star Hotel</td>
                   <td align="center">
-                    <a href="">Sửa <img src="../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
-                    <a href="">Xóa <img src="../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
+                    <a href="">Sửa <img src="../../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
+                    <a href="">Xóa <img src="../../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
                   </td>
                 </tr>
                 <tr>
-                <td>1</td>
+                  <td>1</td>
                   <td>Phòng VIP 101</td>
                   <td>Cạnh biển, có thể ngắm bình minh lúc bão, nhìn thấy các hiện tượng tự nhiên như sóng thần, lốc xoáy,...</td>
                   <td>300$/ đêm</td>
                   <td> 15 m2</td>
+                  <td> 5 phòng</td>
+                  <td> 2 giường</td>
+                  <td>Hướng 1 giờ</td>
                   <td>3 người</td>
                   <td>Thousand Star Hotel</td>
                   <td align="center">
-                    <a href="">Sửa <img src=' {{ asset(
-                    "dist/img/pencil.gif") }}' alt="edit" /></a>
-                    <a href="">Xóa <img src="
-                    <a href="">Sửa <img src=' {{ asset(
-                    "dist/img/pencil.gif") }}'" width="16" height="16" alt="delete" /></a>
+                    <a href="">Sửa <img src="../../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
+                    <a href="">Xóa <img src="../../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
                   </td>
                 </tr>
                 <tr>
-                <td>1</td>
+                  <td>1</td>
                   <td>Phòng VIP 101</td>
                   <td>Cạnh biển, có thể ngắm bình minh lúc bão, nhìn thấy các hiện tượng tự nhiên như sóng thần, lốc xoáy,...</td>
                   <td>300$/ đêm</td>
                   <td> 15 m2</td>
+                  <td> 5 phòng</td>
+                  <td> 2 giường</td>
+                  <td>Hướng 1 giờ</td>
                   <td>3 người</td>
                   <td>Thousand Star Hotel</td>
                   <td align="center">
-                    <a href="">Sửa <img src="../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
-                    <a href="">Xóa <img src="../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
+                    <a href="">Sửa <img src="../../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
+                    <a href="">Xóa <img src="../../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
                   </td>
                 </tr>
                 <tr>
-                <td>1</td>
+                  <td>1</td>
                   <td>Phòng VIP 101</td>
                   <td>Cạnh biển, có thể ngắm bình minh lúc bão, nhìn thấy các hiện tượng tự nhiên như sóng thần, lốc xoáy,...</td>
                   <td>300$/ đêm</td>
                   <td> 15 m2</td>
+                  <td> 5 phòng</td>
+                  <td> 2 giường</td>
+                  <td>Hướng 1 giờ</td>
                   <td>3 người</td>
                   <td>Thousand Star Hotel</td>
                   <td align="center">
-                    <a href="">Sửa <img src="../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
-                    <a href="">Xóa <img src="../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
+                    <a href="">Sửa <img src="../../hotel_admin/dít/img/pencil.gì" alt="edit" /></a>
+                    <a href="">Xóa <img src="../../hotel_admin/dít/img/bin.gì" width="16" height="16" alt="delete" /></a>
                   </td>
                 </tr>
                 <tr>
-                 <td>1</td>
+                  <td>1</td>
                   <td>Phòng VIP 101</td>
                   <td>Cạnh biển, có thể ngắm bình minh lúc bão, nhìn thấy các hiện tượng tự nhiên như sóng thần, lốc xoáy,...</td>
                   <td>300$/ đêm</td>
                   <td> 15 m2</td>
+                  <td> 5 phòng</td>
+                  <td> 2 giường</td>
+                  <td>Hướng 1 giờ</td>
                   <td>3 người</td>
                   <td>Thousand Star Hotel</td>
                   <td align="center">
-                    <a href="">Sửa <img src="../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
-                    <a href="">Xóa <img src="../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
+                    <a href="">Sửa <img src="../../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
+                    <a href="">Xóa <img src="../../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
                   </td>
                 </tr>
                 <tr>
-                 <td>1</td>
+                  <td>1</td>
                   <td>Phòng VIP 101</td>
                   <td>Cạnh biển, có thể ngắm bình minh lúc bão, nhìn thấy các hiện tượng tự nhiên như sóng thần, lốc xoáy,...</td>
                   <td>300$/ đêm</td>
                   <td> 15 m2</td>
+                  <td> 5 phòng</td>
+                  <td> 2 giường</td>
+                  <td>Hướng 1 giờ</td>
                   <td>3 người</td>
                   <td>Thousand Star Hotel</td>
                   <td align="center">
-                    <a href="">Sửa <img src="../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
-                    <a href="">Xóa <img src="../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
+                    <a href="">Sửa <img src="../../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
+                    <a href="">Xóa <img src="../../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
                   </td>
                 </tr>
                 <tr>
-                 <td>1</td>
+                  <td>1</td>
                   <td>Phòng VIP 101</td>
                   <td>Cạnh biển, có thể ngắm bình minh lúc bão, nhìn thấy các hiện tượng tự nhiên như sóng thần, lốc xoáy,...</td>
                   <td>300$/ đêm</td>
                   <td> 15 m2</td>
+                  <td> 5 phòng</td>
+                  <td> 2 giường</td>
+                  <td>Hướng 1 giờ</td>
                   <td>3 người</td>
                   <td>Thousand Star Hotel</td>
                   <td align="center">
-                    <a href="">Sửa <img src="../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
-                    <a href="">Xóa <img src="../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
+                    <a href="">Sửa <img src="../../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
+                    <a href="">Xóa <img src="../../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
                   </td>
                 </tr>
                 <tr>
-                <td>1</td>
+                  <td>1</td>
                   <td>Phòng VIP 101</td>
                   <td>Cạnh biển, có thể ngắm bình minh lúc bão, nhìn thấy các hiện tượng tự nhiên như sóng thần, lốc xoáy,...</td>
                   <td>300$/ đêm</td>
                   <td> 15 m2</td>
+                  <td> 5 phòng</td>
+                  <td> 2 giường</td>
+                  <td>Hướng 1 giờ</td>
                   <td>3 người</td>
                   <td>Thousand Star Hotel</td>
                   <td align="center">
-                    <a href="">Sửa <img src="../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
-                    <a href="">Xóa <img src="../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
+                    <a href="">Sửa <img src="../../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
+                    <a href="">Xóa <img src="../../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
                   </td>
                 </tr>
                 <tr>
-                 <td>1</td>
+                  <td>1</td>
                   <td>Phòng VIP 101</td>
                   <td>Cạnh biển, có thể ngắm bình minh lúc bão, nhìn thấy các hiện tượng tự nhiên như sóng thần, lốc xoáy,...</td>
                   <td>300$/ đêm</td>
                   <td> 15 m2</td>
+                  <td> 5 phòng</td>
+                  <td> 2 giường</td>
+                  <td>Hướng 1 giờ</td>
                   <td>3 người</td>
                   <td>Thousand Star Hotel</td>
                   <td align="center">
-                    <a href="">Sửa <img src="../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
-                    <a href="">Xóa <img src="../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
+                    <a href="">Sửa <img src="../../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
+                    <a href="">Xóa <img src="../../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
                   </td>
                 </tr>
                 <tr>
-                 <td>1</td>
+                  <td>1</td>
                   <td>Phòng VIP 101</td>
                   <td>Cạnh biển, có thể ngắm bình minh lúc bão, nhìn thấy các hiện tượng tự nhiên như sóng thần, lốc xoáy,...</td>
                   <td>300$/ đêm</td>
                   <td> 15 m2</td>
+                  <td> 5 phòng</td>
+                  <td> 2 giường</td>
+                  <td>Hướng 1 giờ</td>
                   <td>3 người</td>
                   <td>Thousand Star Hotel</td>
                   <td align="center">
-                    <a href="">Sửa <img src="../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
-                    <a href="">Xóa <img src="../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
+                    <a href="">Sửa <img src="../../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
+                    <a href="">Xóa <img src="../../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
                   </td>
                 </tr>
                 <tr>
-                 <td>1</td>
+                  <td>1</td>
                   <td>Phòng VIP 101</td>
                   <td>Cạnh biển, có thể ngắm bình minh lúc bão, nhìn thấy các hiện tượng tự nhiên như sóng thần, lốc xoáy,...</td>
                   <td>300$/ đêm</td>
                   <td> 15 m2</td>
+                  <td> 5 phòng</td>
+                  <td> 2 giường</td>
+                  <td>Hướng 1 giờ</td>
                   <td>3 người</td>
                   <td>Thousand Star Hotel</td>
                   <td align="center">
-                    <a href="">Sửa <img src="../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
-                    <a href="">Xóa <img src="../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
+                    <a href="">Sửa <img src="../../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
+                    <a href="">Xóa <img src="../../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
                   </td>
                 </tr>
                 <tr>
-                 <td>1</td>
+                  <td>1</td>
                   <td>Phòng VIP 101</td>
                   <td>Cạnh biển, có thể ngắm bình minh lúc bão, nhìn thấy các hiện tượng tự nhiên như sóng thần, lốc xoáy,...</td>
                   <td>300$/ đêm</td>
                   <td> 15 m2</td>
+                  <td> 5 phòng</td>
+                  <td> 2 giường</td>
+                  <td>Hướng 1 giờ</td>
                   <td>3 người</td>
                   <td>Thousand Star Hotel</td>
                   <td align="center">
-                    <a href="">Sửa <img src="../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
-                    <a href="">Xóa <img src="../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
+                    <a href="">Sửa <img src="../../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
+                    <a href="">Xóa <img src="../../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
                   </td>
                 </tr>
                 <tr>
-                <td>1</td>
+                  <td>1</td>
                   <td>Phòng VIP 101</td>
                   <td>Cạnh biển, có thể ngắm bình minh lúc bão, nhìn thấy các hiện tượng tự nhiên như sóng thần, lốc xoáy,...</td>
                   <td>300$/ đêm</td>
                   <td> 15 m2</td>
+                  <td> 5 phòng</td>
+                  <td> 2 giường</td>
+                  <td>Hướng 1 giờ</td>
                   <td>3 người</td>
                   <td>Thousand Star Hotel</td>
                   <td align="center">
-                    <a href="">Sửa <img src="../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
-                    <a href="">Xóa <img src="../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
+                    <a href="">Sửa <img src="../../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
+                    <a href="">Xóa <img src="../../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
                   </td>
                 </tr>
                 <tr>
-                <td>1</td>
+                  <td>1</td>
                   <td>Phòng VIP 101</td>
                   <td>Cạnh biển, có thể ngắm bình minh lúc bão, nhìn thấy các hiện tượng tự nhiên như sóng thần, lốc xoáy,...</td>
                   <td>300$/ đêm</td>
                   <td> 15 m2</td>
+                  <td> 5 phòng</td>
+                  <td> 2 giường</td>
+                  <td>Hướng 1 giờ</td>
                   <td>3 người</td>
                   <td>Thousand Star Hotel</td>
                   <td align="center">
-                    <a href="">Sửa <img src="../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
-                    <a href="">Xóa <img src="../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
+                    <a href="">Sửa <img src="../../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
+                    <a href="">Xóa <img src="../../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
                   </td>
                 </tr>
                 <tr>
-                 <td>1</td>
+                  <td>1</td>
                   <td>Phòng VIP 101</td>
                   <td>Cạnh biển, có thể ngắm bình minh lúc bão, nhìn thấy các hiện tượng tự nhiên như sóng thần, lốc xoáy,...</td>
                   <td>300$/ đêm</td>
                   <td> 15 m2</td>
+                  <td> 5 phòng</td>
+                  <td> 2 giường</td>
+                  <td>Hướng 1 giờ</td>
                   <td>3 người</td>
                   <td>Thousand Star Hotel</td>
                   <td align="center">
-                    <a href="">Sửa <img src="../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
-                    <a href="">Xóa <img src="../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
+                    <a href="">Sửa <img src="../../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
+                    <a href="">Xóa <img src="../../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
                   </td>
                 </tr>
                 <tr>
-                <td>1</td>
+                  <td>1</td>
                   <td>Phòng VIP 101</td>
                   <td>Cạnh biển, có thể ngắm bình minh lúc bão, nhìn thấy các hiện tượng tự nhiên như sóng thần, lốc xoáy,...</td>
                   <td>300$/ đêm</td>
                   <td> 15 m2</td>
+                  <td> 5 phòng</td>
+                  <td> 2 giường</td>
+                  <td>Hướng 1 giờ</td>
                   <td>3 người</td>
                   <td>Thousand Star Hotel</td>
                   <td align="center">
-                    <a href="">Sửa <img src="../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
-                    <a href="">Xóa <img src="../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
+                    <a href="">Sửa <img src="../../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
+                    <a href="">Xóa <img src="../../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
                   </td>
                 </tr>
                 <tr>
-               <td>1</td>
+                  <td>1</td>
                   <td>Phòng VIP 101</td>
                   <td>Cạnh biển, có thể ngắm bình minh lúc bão, nhìn thấy các hiện tượng tự nhiên như sóng thần, lốc xoáy,...</td>
                   <td>300$/ đêm</td>
                   <td> 15 m2</td>
+                  <td> 5 phòng</td>
+                  <td> 2 giường</td>
+                  <td>Hướng 1 giờ</td>
                   <td>3 người</td>
                   <td>Thousand Star Hotel</td>
                   <td align="center">
-                    <a href="">Sửa <img src="../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
-                    <a href="">Xóa <img src="../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
+                    <a href="">Sửa <img src="../../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
+                    <a href="">Xóa <img src="../../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
                   </td>
                 </tr>
                 <tr>
-                <td>1</td>
+                  <td>1</td>
                   <td>Phòng VIP 101</td>
                   <td>Cạnh biển, có thể ngắm bình minh lúc bão, nhìn thấy các hiện tượng tự nhiên như sóng thần, lốc xoáy,...</td>
                   <td>300$/ đêm</td>
                   <td> 15 m2</td>
+                  <td> 5 phòng</td>
+                  <td> 2 giường</td>
+                  <td>Hướng 1 giờ</td>
                   <td>3 người</td>
                   <td>Thousand Star Hotel</td>
                   <td align="center">
-                    <a href="">Sửa <img src="../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
-                    <a href="">Xóa <img src="../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
+                    <a href="">Sửa <img src="../../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
+                    <a href="">Xóa <img src="../../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
                   </td>
                 </tr>
                 <tr>
-                <td>1</td>
+                  <td>1</td>
                   <td>Phòng VIP 101</td>
                   <td>Cạnh biển, có thể ngắm bình minh lúc bão, nhìn thấy các hiện tượng tự nhiên như sóng thần, lốc xoáy,...</td>
                   <td>300$/ đêm</td>
                   <td> 15 m2</td>
+                  <td> 5 phòng</td>
+                  <td> 2 giường</td>
+                  <td>Hướng 1 giờ</td>
                   <td>3 người</td>
                   <td>Thousand Star Hotel</td>
                   <td align="center">
-                    <a href="">Sửa <img src="../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
-                    <a href="">Xóa <img src="../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
+                    <a href="">Sửa <img src="../../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
+                    <a href="">Xóa <img src="../../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
                   </td>
                 </tr>
                 <tr>
-                  <<td>1</td>
-                  <td>Khách sạn AsianTech</td>
-                  <td>Đường số 2 KCN An Đồn</td>
-                  <td>5 sao</td>
-                  <td>Thân thiện, lịch sự, sạch sẽ, thoải mái</td>
-                  <td>Đà Nẵng</td>
-                  <td align="center">
-                    <a href="">Sửa <img src="../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
-                    <a href="">Xóa <img src="../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
-                  </td>
-                </tr>
-                <tr>
-                 <td>1</td>
+                  <td>1</td>
                   <td>Phòng VIP 101</td>
                   <td>Cạnh biển, có thể ngắm bình minh lúc bão, nhìn thấy các hiện tượng tự nhiên như sóng thần, lốc xoáy,...</td>
                   <td>300$/ đêm</td>
                   <td> 15 m2</td>
+                  <td> 5 phòng</td>
+                  <td> 2 giường</td>
+                  <td>Hướng 1 giờ</td>
                   <td>3 người</td>
                   <td>Thousand Star Hotel</td>
                   <td align="center">
-                    <a href="">Sửa <img src="../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
-                    <a href="">Xóa <img src="../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
+                    <a href="">Sửa <img src="../../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
+                    <a href="">Xóa <img src="../../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
                   </td>
                 </tr>
                 <tr>
-                 <td>1</td>
+                  <td>1</td>
                   <td>Phòng VIP 101</td>
                   <td>Cạnh biển, có thể ngắm bình minh lúc bão, nhìn thấy các hiện tượng tự nhiên như sóng thần, lốc xoáy,...</td>
                   <td>300$/ đêm</td>
                   <td> 15 m2</td>
+                  <td> 5 phòng</td>
+                  <td> 2 giường</td>
+                  <td>Hướng 1 giờ</td>
                   <td>3 người</td>
                   <td>Thousand Star Hotel</td>
                   <td align="center">
-                    <a href="">Sửa <img src="../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
-                    <a href="">Xóa <img src="../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
+                    <a href="">Sửa <img src="../../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
+                    <a href="">Xóa <img src="../../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
                   </td>
                 </tr>
                 <tr>
-                <td>1</td>
+                  <td>1</td>
                   <td>Phòng VIP 101</td>
                   <td>Cạnh biển, có thể ngắm bình minh lúc bão, nhìn thấy các hiện tượng tự nhiên như sóng thần, lốc xoáy,...</td>
                   <td>300$/ đêm</td>
                   <td> 15 m2</td>
+                  <td> 5 phòng</td>
+                  <td> 2 giường</td>
+                  <td>Hướng 1 giờ</td>
                   <td>3 người</td>
                   <td>Thousand Star Hotel</td>
                   <td align="center">
-                    <a href="">Sửa <img src="../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
-                    <a href="">Xóa <img src="../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
+                    <a href="">Sửa <img src="../../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
+                    <a href="">Xóa <img src="../../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
                   </td>
                 </tr>
-                </tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Phòng VIP 101</td>
+                  <td>Cạnh biển, có thể ngắm bình minh lúc bão, nhìn thấy các hiện tượng tự nhiên như sóng thần, lốc xoáy,...</td>
+                  <td>300$/ đêm</td>
+                  <td> 15 m2</td>
+                  <td> 5 phòng</td>
+                  <td> 2 giường</td>
+                  <td>Hướng 1 giờ</td>
+                  <td>3 người</td>
+                  <td>Thousand Star Hotel</td>
+                  <td align="center">
+                    <a href="">Sửa <img src="../../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
+                    <a href="">Xóa <img src="../../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Phòng VIP 101</td>
+                  <td>Cạnh biển, có thể ngắm bình minh lúc bão, nhìn thấy các hiện tượng tự nhiên như sóng thần, lốc xoáy,...</td>
+                  <td>300$/ đêm</td>
+                  <td> 15 m2</td>
+                  <td> 5 phòng</td>
+                  <td> 2 giường</td>
+                  <td>Hướng 1 giờ</td>
+                  <td>3 người</td>
+                  <td>Thousand Star Hotel</td>
+                  <td align="center">
+                    <a href="">Sửa <img src="../../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
+                    <a href="">Xóa <img src="../../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Phòng VIP 101</td>
+                  <td>Cạnh biển, có thể ngắm bình minh lúc bão, nhìn thấy các hiện tượng tự nhiên như sóng thần, lốc xoáy,...</td>
+                  <td>300$/ đêm</td>
+                  <td> 15 m2</td>
+                  <td> 5 phòng</td>
+                  <td> 2 giường</td>
+                  <td>Hướng 1 giờ</td>
+                  <td>3 người</td>
+                  <td>Thousand Star Hotel</td>
+                  <td align="center">
+                    <a href="">Sửa <img src="../../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
+                    <a href="">Xóa <img src="../../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Phòng VIP 101</td>
+                  <td>Cạnh biển, có thể ngắm bình minh lúc bão, nhìn thấy các hiện tượng tự nhiên như sóng thần, lốc xoáy,...</td>
+                  <td>300$/ đêm</td>
+                  <td> 15 m2</td>
+                  <td> 5 phòng</td>
+                  <td> 2 giường</td>
+                  <td>Hướng 1 giờ</td>
+                  <td>3 người</td>
+                  <td>Thousand Star Hotel</td>
+                  <td align="center">
+                    <a href="">Sửa <img src="../../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
+                    <a href="">Xóa <img src="../../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Phòng VIP 101</td>
+                  <td>Cạnh biển, có thể ngắm bình minh lúc bão, nhìn thấy các hiện tượng tự nhiên như sóng thần, lốc xoáy,...</td>
+                  <td>300$/ đêm</td>
+                  <td> 15 m2</td>
+                  <td> 5 phòng</td>
+                  <td> 2 giường</td>
+                  <td>Hướng 1 giờ</td>
+                  <td>3 người</td>
+                  <td>Thousand Star Hotel</td>
+                  <td align="center">
+                    <a href="">Sửa <img src="../../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
+                    <a href="">Xóa <img src="../../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Phòng VIP 101</td>
+                  <td>Cạnh biển, có thể ngắm bình minh lúc bão, nhìn thấy các hiện tượng tự nhiên như sóng thần, lốc xoáy,...</td>
+                  <td>300$/ đêm</td>
+                  <td> 15 m2</td>
+                  <td> 5 phòng</td>
+                  <td> 2 giường</td>
+                  <td>Hướng 1 giờ</td>
+                  <td>3 người</td>
+                  <td>Thousand Star Hotel</td>
+                  <td align="center">
+                    <a href="">Sửa <img src="../../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
+                    <a href="">Xóa <img src="../../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Phòng VIP 101</td>
+                  <td>Cạnh biển, có thể ngắm bình minh lúc bão, nhìn thấy các hiện tượng tự nhiên như sóng thần, lốc xoáy,...</td>
+                  <td>300$/ đêm</td>
+                  <td> 15 m2</td>
+                  <td> 5 phòng</td>
+                  <td> 2 giường</td>
+                  <td>Hướng 1 giờ</td>
+                  <td>3 người</td>
+                  <td>Thousand Star Hotel</td>
+                  <td align="center">
+                    <a href="">Sửa <img src="../../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
+                    <a href="">Xóa <img src="../../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
+                  </td>
+                </tr>
               </table>
             </div>
             <!-- /.box-body -->
@@ -355,7 +524,6 @@
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
-@include('hotel_admin.inc.footer')  
 
   <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark">
@@ -368,7 +536,7 @@
     <div class="tab-content">
       <!-- Home tab content -->
       <div class="tab-pane" id="control-sidebar-home-tab">
-@include('hotel_admin.inc.infor')
+@include('templates.hotel_admin.infor')
         <!-- /.control-sidebar-menu -->
 
       </div>
@@ -454,34 +622,4 @@
 </div>
 <!-- ./wrapper -->
 
-<!-- jQuery 3 -->
-<script src="../hotel_admin/bower_components/jquery/dist/jquery.min.js"></script>
- <!-- Bootstrap 3.3.7 -->
-<script src="../hotel_admin/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-<!-- DataTables -->
-<script src="../hotel_admin/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
-<script src="../hotel_admin/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
-<!-- SlimScroll -->
-<script src="../hotel_admin/bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
-<!-- FastClick -->
-<script src="../hotel_admin/bower_components/fastclick/lib/fastclick.js"></script>
-<!-- AdminLTE App -->
-<script src="../hotel_admin/dist/js/adminlte.min.js"></script>
-<!-- AdminLTE for demo purposes -->
-<script src="../hotel_admin/dist/js/demo.js"></script>
-<!-- page script -->
-<script>
-  $(function () {
-    $('#example1').DataTable()
-    $('#example2').DataTable({
-      'paging'      : true,
-      'lengthChange': false,
-      'searching'   : false,
-      'ordering'    : true,
-      'info'        : true,
-      'autoWidth'   : false
-    })
-  })
-</script>
-</body>
-</html>
+@endsection
