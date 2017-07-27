@@ -7,12 +7,12 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Chuyên mục Danh mục tin
-        <small>advanced tables</small>
+        Chuyên mục Dịch vụ
+        <small>Service</small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Trang chủ</a></li>
-        <li class="active">Danh mục tin</li>
+        <li class="active">Dịch vụ</li>
       </ol>
     </section>
 
@@ -26,7 +26,7 @@
             </div>
             <div class="float-left">
               <a href="">
-              <span>Thêm Danh Mục <img src="../../hotel_admin/dist/img/plus-small.gif" alt="ThemTin"></span>
+              <span>Thêm Dịch vụ <img src="../../hotel_admin/dist/img/plus-small.gif" alt="ThemTin"></span>
               </a>
             </div>
             <!-- /.box-header -->
@@ -42,31 +42,27 @@
                 <tbody>
                 <tr>
                   <td>1</td>
-                  <td>Khuyến mãi
+                  <td>Tắm trắng
                   </td>
                   <td align="center">
-                    <a href="">Sửa <img src="../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
-                    <a href="">Xóa <img src="../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
+                    <a href="">Sửa <img src="../../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
+                    <a href="">Xóa <img src="../../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
                   </td>
                 </tr>
                 <tr>
-                  <td>Trident</td>
-                  <td>Internet
-                    Explorer 5.0
-                  </td>
+                  <td>2</td>
+                  <td>Spa</td>
                   <td align="center">
-                    <a href="">Sửa <img src="../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
-                    <a href="">Xóa <img src="../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
+                    <a href="">Sửa <img src="../../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
+                    <a href="">Xóa <img src="../../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
                   </td>
                 </tr>
                 <tr>
-                  <td>Trident</td>
-                  <td>Internet
-                    Explorer 5.5
-                  </td>
+                  <td>3</td>
+                  <td> Rửa bát</td>
                   <td align="center">
-                    <a href="">Sửa <img src="../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
-                    <a href="">Xóa <img src="../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
+                    <a href="">Sửa <img src="../../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
+                    <a href="">Xóa <img src="../../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
                   </td>
                 </tr>
                 <tr>
@@ -75,8 +71,8 @@
                     Explorer 6
                   </td>
                   <td align="center">
-                    <a href="">Sửa <img src="../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
-                    <a href="">Xóa <img src="../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
+                    <a href="">Sửa <img src="../../hotel_admin/dist/img/pencil.gif" alt="edit" /></a>
+                    <a href="">Xóa <img src="../../hotel_admin/dist/img/bin.gif" width="16" height="16" alt="delete" /></a>
                   </td> 
                 </tr>
                 <tr>
